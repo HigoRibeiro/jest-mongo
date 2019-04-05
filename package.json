@@ -1,0 +1,26 @@
+{
+  "name": "testmongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.21"
+  },
+  "devDependencies": {
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jest": "^24.6.0",
+    "mongodb-memory-server": "^4.2.1",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test jest",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "start": "node src/server.js"
+  }
+}
